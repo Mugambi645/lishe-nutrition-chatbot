@@ -8,14 +8,14 @@ services:
       POSTGRES_PASSWORD: lishe
       POSTGRES_DB: lishe
     ports:
-      - "5434:5434"
+      - "4322:5432"
     volumes:
       - lishe_pg_data:/var/lib/postgresql/data
 
   redis:
     image: redis:7-alpine
     ports:
-      - "6380:6380"
+      - "6079:6379"
 
 volumes:
   lishe_pg_data:
